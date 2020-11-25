@@ -2,7 +2,7 @@ import React from "react";
 
 const Controls = ({ saveRecipe, addNewRecipe }) => {
     return (
-        <section>
+        <section className="controls">
             <button className="save" type="button" onClick={saveRecipe}>
                 Save Recipe
             </button>

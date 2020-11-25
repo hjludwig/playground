@@ -11,15 +11,3 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-.App {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.recipe {
-    width: 90%;
-    text-align: left;
-}
-.recipe img {
-    max-width: 100%;
-}

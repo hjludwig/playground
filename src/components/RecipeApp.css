@@ -1,0 +1,52 @@
+/* Variables */
+:root {
+    --main-title-color: #f7bc3e;
+    --darker-color: #eea300;
+}
+
+.recipe {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    position: relative;
+}
+.recipe h2 {
+    font-size: 3em;
+    font-family: "Merriweather", serif;
+    color: var(--main-title-color);
+}
+.recipe img {
+    /* width: 12rem; */
+    max-width: 12rem;
+}
+.recipe header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.recipe header p:after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 4px;
+    background-color: var(--main-title-color);
+    margin: 2rem auto;
+}
+.controls {
+    background: var(--darker-color);
+    padding: 2rem;
+    text-align: right;
+}
+.controls button {
+    border: 2px solid white;
+    background: none;
+    color: white;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    margin: 1rem;
+}

@@ -37,9 +37,11 @@ const Recipe = ({ recipe, setRecipe, url }) => {
     const { name, ingredients, images, description, instructions } = recipe;
     return (
         <section className="recipe">
-            <h2>{name}</h2>
-            <img src={images[0]} alt={name} />
-            <p>{description}</p>
+            <header>
+                <img src={images[0]} alt={name} />
+                <h2>{name}</h2>
+                <p>{description}</p>
+            </header>
             <Ingredients ingredients={ingredients} />
             <Instructions instructions={instructions[0].steps} />
         </section>

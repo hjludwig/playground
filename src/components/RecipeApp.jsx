@@ -3,6 +3,7 @@ import Controls from "./recipe-components/Controls";
 import InputForm from "./recipe-components/InputForm";
 import Recipe from "./recipe-components/Recipe";
 import RecipeList from "./recipe-components/RecipeList";
+import "./RecipeApp.css";
 
 const RecipeApp = () => {
     const [url, setUrl] = useState("");
@@ -49,8 +50,8 @@ const RecipeApp = () => {
     return (
         <main>
             <RecipeList archive={archive} />
-            <Recipe recipe={recipe} setRecipe={setRecipe} url={url} />
             <Controls saveRecipe={saveRecipe} addNewRecipe={addNewRecipe} />
+            <Recipe recipe={recipe} setRecipe={setRecipe} url={url} />
         </main>
     );
 };
